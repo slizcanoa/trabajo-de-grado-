@@ -1,0 +1,52 @@
+/* Adicionar estilo del mapa */
+html, body, #map {
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 5px #888;
+    padding: 0;
+    margin: 0;
+}
+
+/* Adicionar estilo del boton Zoom Home */
+#zoom-home-button {
+    position: absolute;
+    top: 95px;
+    left: 10.5px;
+    width: 8px;
+    height: 8px;
+    padding: 14px;
+    background: url(../img/home.png);
+    background-position: center;
+    background-size: contain;
+    background-color: white;
+    z-index: 400;
+    cursor: pointer;
+    border-radius: 10%;
+}   
+
+/* Adicionar estilo del boton Zoom Home al pasar el mouse */   
+#zoom-home-button:hover {
+    background: url(../img/home.png);
+    background-position: center;
+    background-size: contain;
+    background-color: 	#F0F0F0;
+    z-index: 400;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+/* Adicional estilo del logo UD */
+#logoUD {
+    position: relative;
+    z-index: 500;
+    top: 52%;
+    left: 1.2%;
+}
+
+/* Adicional estilo del logo Syngenta*/
+#logoSyngenta {
+    position: relative;
+    z-index: 500;
+    top: 81%;
+    left: 76%;
+}

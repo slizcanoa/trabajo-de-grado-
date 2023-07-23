@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Codificación usada en nuestra página web -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>GEOVISOR SYNGENTA</title>
+
+    <!--Adicionar Librerias CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="http://norkart.github.io/Leaflet-MiniMap/Control.MiniMap.css"/>
+    <link rel="stylesheet" href="http://mrmufflon.github.io/Leaflet.Coordinates/dist/Leaflet.Coordinates-0.1.3.css"/>
+    <link rel="stylesheet" href="css/geovisor_syngenta_style.css"/>
+
+</head>
+<body>
+    <!--Adicionar script librerías y plugin JS-->
+    <script src="https://unpkg.com/leaflet@1.7.0/dist/leaflet.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://norkart.github.io/Leaflet-MiniMap/Control.MiniMap.js"></script>
+    <script src="http://mrmufflon.github.io/Leaflet.Coordinates/dist/Leaflet.Coordinates-0.1.3.min.js"></script>
+    <script src="js/leaftlet.wms.js"></script>
+    <script src="js/Autolinker.min.js"></script>
+
+    <!--Adicionar script de los datos GeoJson en JS-->
+    <script src="data/areaproyecto.js"></script>;
+    <script src="data/areainfluencia.js"></script>;
+    <script src="data/infraproyectoln.js"></script>;
+    <script src="data/infraproyectopg.js"></script>;
+
+    <!--Definir contenedor del mapa -->
+    <div id='map'>
+        
+        <!-- Definir contenedor del logo UD-->
+        <div id="logoUD">
+            <img src="img/UD.png" width="150">
+        </div>
+
+        <!-- Definir contenedor del logo Syngenta -->
+        <div id="logoSyngenta">
+            <img src="img/syngenta.png" width="120">
+        </div>
+    </div>
+
+    <!--Definir boton vista principal -->
+    <button id='zoom-home-button'></button>
+
+ 
+
+    <!--Adicionar script cargue GeoJson-->
+    <script src="js/loadGeoJson.js"></script> 
+
+    <!--Adicionar script principal JS-->
+    <script src="js/map.js"></script> 
+
+    <!--Adicionar script mini mapa JS-->
+    <script src="js/miniMap.js"></script> 
+
+    
+    
+</body> 
+</html>
